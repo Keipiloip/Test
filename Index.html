@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <title>min portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+    </header>
+
+    <section class="Top">
+      <div class="overskrift_div">
+        <h1 id="overskrift">Marcus <br>Portfolio</h1>
+      </div>
+
+      <div class="button_div">
+        <button class="nav_button" onclick="scrollToSection('Kontakt-meg')"> Kontakt meg</button>
+        <button class="nav_button" onclick="scrollToSection('Mine-prosjekter')">Prosjekter</button>
+        <button class="nav_button" onclick="scrollToSection('om-meg')">Om meg</button>
+      </div>
+    </section>
+
+    <section class="Om-meg" id="om-meg">
+      <div class="om-meg-tekst">
+        <div class="tekst-container">
+        <h2>Hei</h2>
+        <p class="mindre">Jeg heter Marcus.<br> 
+        Jeg er en rolig og snill person som liker å fokusere når jeg jobber med noe jeg synes er interessant. Da blir <br> 
+        jeg veldig konsentrert og prøver alltid å gjøre mitt beste. Jeg liker også å være kreativ og finne nye løsninger<br>
+         når jeg trenger det. Jeg setter pris på rolige omgivelser og prøver å være hjelpsom mot andre når jeg kan.</p>
+        <hr class="accent">
+        </div>
+        <div class="dobbel-container">
+
+         <div class="bilde-container">
+        <img src="img/Bilde-av-meg.jpg" alt="Bilde av meg" class="profil-bilde">
+        </div>
+
+        
+        <div class="info-container">
+        <h2>Info om meg</h2>
+        <p><b>Navn:</b> Marcus Ulvøy Didriksen</p>
+        <p><b>Alder:</b> 16år</p>
+        <p><b>Addresse:</b> Brønøysund</p>
+        </div>
+
+       
+        </div>
+        </div>
+      
+    </section>
+
+    <section class="umbreon" id="umbreon">
+    </section>
+
+    <section class="Mine-prosjekter" id="Mine-prosjekter">
+      <div class="Prosjekter-tekst">
+        <h2><u>Mine prosjekter</u></h2>
+        <button class ="Fotogaleri-btn" onclick="scrollToSection('Fotogaleri')"><u>Fotogaleri</u></button>
+        <button class ="Kode-prosjekter-btn" onclick="scrollToSection('Kode-prosjekter')"><u>Kode prosjekter</u></button>
+
+      </div>
+    </section>
+
+    <h2 class="p">Fotogaleri</h2>
+
+    <section class="Fotogaleri" id="Fotogaleri">
+      <div class="container">
+        <img src="img/Placeholder-image.png" alt="Placeholder" class="placeholder size1"/>
+        <img src="img/Placeholder-image.png" alt="Placeholder" class="placeholder size2"/>
+        <img src="img/Placeholder-image.png" alt="Placeholder" class="placeholder size3"/>
+        <img src="img/Placeholder-image.png" alt="Placeholder" class="placeholder size4"/>
+        <img src="img/Placeholder-image.png" alt="Placeholder" class="placeholder size5"/>
+      </div>
+    </section>
+    <h2 class="p">Kode prosjekter</h2>
+    <section class="Kode-prosjekter" id="Kode-prosjekter">
+      <div class="Prosjekt-container">
+        <h2>Prosjekt 1</h2>
+        <img src="img/Placeholder-image.png" class="Prosjekt">
+        <p class="mindre">beskrivelse</p>
+        <a class="mindre" href="https://www.eksempel.no">Lenke</a>
+      </div>
+
+      <div class="Prosjekt-container">
+        <h2>Prosjekt 2</h2>
+        <img src="img/Placeholder-image.png" class="Prosjekt">
+        <p class="mindre">beskrivelse</p>
+        <a class="mindre" href="https://www.eksempel.no">Lenke</a>
+      </div>
+
+      <div class="Prosjekt-container">
+        <h2>Prosjekt 3</h2>
+        <img src="img/Placeholder-image.png" class="Prosjekt">
+        <p class="mindre">beskrivelse</p>
+        <a class="mindre" href="https://www.eksempel.no">Lenke</a>
+      </div>
+    </section>
+
+    <section class="Mismagius">
+    </section>
+
+    <section class="Kontakt-meg" id="Kontakt-meg">
+      <div class="kontakt-tekst">
+        <h2>Ønsker du å kontakt meg</h2>
+        <p class="mindre">Epost: Marcus.didriksen@icloud.com</p>
+        <p class="mindre">Telefon: 969 13 760</p>
+      </div>
+    </section>
+
+    <a onclick="scrollToTop()" class="float">
+      <i class="fa fa-plus my-float"></i>
+      <p class ="arrow"> <b>^</b> </p> 
+    </a>
+
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    </script>
+  </body>
+</html>

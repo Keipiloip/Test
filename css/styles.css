@@ -1,0 +1,292 @@
+* {box-sizing: border-box;}
+html,body{height:100%;}
+
+body{
+    margin:0;
+    font-size: 35px;
+    line-height: 70px;
+    font-family: "Carrois Gothic", sans-serif;
+    text-shadow: 0.015em 0 0 currentColor, -0.015em 0 0 currentColor;
+    color: #A882DD;
+}
+
+#overskrift{
+    margin-left: 45px;
+    margin-top: 25px;
+    text-shadow: 2px 2px black
+}
+
+.Top{
+    display: flex;
+    justify-content: space-between;
+    min-width: 960px;
+    width: 100%;
+    min-height: 1250px; 
+    transform : scale(1);         
+    background-image: url('../img/Gengar_baground.png');
+    background-size: cover;
+    position: top middle;
+    z-index: 1
+    
+}
+
+.header{
+    z-index: 2;
+}
+
+.button_div{
+    display: flex;
+    gap: 50px;                
+    margin-right: 20px;
+    margin-top: 47px;
+}
+
+.nav_button{
+    background-color: #A882DD;
+    border: black 3px solid;
+    width: 160px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 30px;
+    text-shadow: 0.00em 0 0 currentColor, -0.00em 0 0 currentColor;
+    margin: 0;
+    
+}
+.nav_button:hover{
+    background-color: #000000;
+    color: #A882DD;
+    cursor: pointer;
+}
+
+.float{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #A882DD;
+    color: #000000;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 100;
+    font-size: 70px;
+    border: black 3px solid;
+}
+
+.arrow{
+    margin-top: 10px;
+}
+
+.float:hover{
+    background-color: #000000;
+    color: #A882DD;
+    cursor: pointer;
+}
+
+.Om-meg{
+    background-color: #2e0856;
+    display: flex;
+    z-index: 2;
+    min-height: 600px;
+    
+    border-top: solid #A882DD 6px;
+    border-bottom: solid #A882DD 6px;
+    font-size : 20px; 
+}
+
+hr.accent {
+    border: 0;
+    height: 2px;
+    background-color: #A882DD;
+    margin: 16px 0;
+}
+
+.om-meg-tekst{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 80px;
+    padding-top : 50px;
+    display: flex;
+    flex-direction: column;
+}
+.info-container{
+line-height: 3px;
+display: flex;
+flex-direction: column;
+}
+
+.profil-bilde{
+display: flex;
+margin-right : 20px;
+width: 250px;                 
+height: 250px;
+border-radius: 10px;
+object-fit: cover;
+object-position: top;
+border: #A882DD 3px solid;
+}
+
+.dobbel-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.umbreon{
+    display: flex;
+    width: 99vw;
+    height: 100vh;        
+    background-image: url('../img/Umbreon_background.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 3
+}
+
+.Mine-prosjekter{
+    background-color: #2e0856;
+    display: flex;
+    z-index: 2;
+    min-height: 600px;
+    
+    border-top: solid #A882DD 6px;
+    border-bottom: solid #A882DD 6px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Fotogaleri-btn, .Kode-prosjekter-btn{
+    background-color: #A882DD;
+    border: black 3px solid;
+    width: 250px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 30px;
+    text-shadow: 0.00em 0 0 currentColor, -0.00em 0 0 currentColor;
+    margin-top: 120px;
+    
+}
+.Fotogaleri-btn:hover, .Kode-prosjekter-btn:hover{
+    background-color: #000000;
+    color: #A882DD;
+    cursor: pointer;
+}
+
+
+
+.Fotogaleri{
+background-color: #2e0856;
+    display: flex;
+    z-index: 2;
+    min-height: 1750px;
+    
+    border-top: solid #A882DD 6px;
+    border-bottom: solid #A882DD 6px;
+
+}
+
+.container {
+  position: relative;   /* reference point for absolute items */
+  width: 1920px;        /* container width */
+  height: 1280px;        /* container height */
+  border: none;
+}
+
+.placeholder {
+  position: absolute;   
+  background-color: #000000;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  border: 2px solid #A882DD;
+}
+
+.size1 { top: 200px; left: 80px; width: 800px; height: 500px; }
+.size2 { top: 100px; left: 1000px; width: 400px; height: 600px; }
+.size3 { top: 850px; left: 120px; width: 350px; height: 500px; }
+.size4 { top: 800px; left: 700px; width: 600px; height: 400px; }
+.size5 { top: 1300px; left: 580px; width: 500px; height: 300px; }
+
+.p {
+  background-color: #2e0856;        
+  margin: 0;
+  text-align: center;
+
+}
+
+.Kode-prosjekter{
+    background-color: #2e0856;
+    display: flex;
+    z-index: 2;
+    min-height: 600px;
+    
+    border-top: solid #A882DD 6px;
+    border-bottom: solid #A882DD 6px;
+
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.Prosjekt{
+    position: relative;   
+    background-color: #000000;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: 2px solid #A882DD;
+    width : 400px;
+    height : 250px;
+}
+
+.Prosjekt-container{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+}
+
+.mindre{
+    font-size : 25px;
+}
+
+.Mismagius{
+    display: flex;
+    width: 99vw;
+    height: 100vh;        
+    background-image: url('../img/Mismagius.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+}
+
+.Kontakt-meg{
+    background-color: #2e0856;
+    display: flex;
+    z-index: 2;
+    min-height: 600px;
+    
+    border-top: solid #A882DD 6px;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.kontakt-tekst{
+    line-height: 50px;
+    text-align: center;
+    background-color: #470C85;
+    border-radius: 20px;
+    padding: 20px;
+    
+    border: solid #000000 2px;
+    
+}
